@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>task:tanaka</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="icomoon/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="slick/slick.css"/>
+<link rel="stylesheet" href="calendar/jquery-ui-1.13.1.custom/jquery-ui.min.css"/>
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+<header class="header-bar list-scroll"> 
+  <!--sp-->
+  <div class="sp header-open"><a href=""><i class="fa-solid fa-magnifying-glass"></i>行き先はどちらですか？</a></div>
+  <!--	<div class="modal-open">モーダルを開く</div>-->
+  <div class="header-container">
+    <div class="header-modal-body">
+      <div class="header-modal-close">
+        <label for="site-search"><i class="fa-solid fa-angle-left"></i></label>
+        <input type="text" placeholder="行き先はどちらですか？">
+      </div>
+      <div class="header-modal-content">
+        <p>柔軟な行き先と日付で検索</p>
+        <div class="h-m-c-link"><a href="">柔軟な検索を試してみる<i class="fa-solid fa-chevron-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <!--ここまで↓--><!--sp--> 
+  <!--tab pc-->
+  <div class="tab header-open-tab">
+    <div class="logo"><img src="img/icons-white.svg" alt="airbub模写サイト"><p class="pc"><img src="img/icons8-red.svg" alt="">airbnb</p></div>
+    <div class="scroll-search">
+      <button class="scroll-house">検索を始める<i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="header-list">
+      <ul>
+        <li><a href="">ホストになる</a></li>
+        <li class="modal-open"><a href=""><span class="icon-globe"></span></a></li>
+      </ul>
+      
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="headernav"> 
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label class="drawer_open" for="drawer_input"><span><i class="fa-solid fa-bars"></i><i class="fa-solid fa-circle-user"></i></span></label>
+        <label class="drawer-background" for="drawer_input"></label>
+        <!-- メニュー -->
+        <nav class="headernav_content">
+          <ul class="headernav_list">
+            <li class="headernav_item"><a href="">登録する</a></li>
+            <li class="headernav_item"><a href="">ログイン</a></li>
+            <li class="headernav_item"><a href="">宿泊をホストする</a></li>
+            <li class="headernav_item"><a href="">体験をホストする</a></li>
+            <li class="headernav_item"><a href="">ヘルプ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="tab header-tabsmenu">
+    <div class="tabsmenu-list">
+      <input id="tabsmenu1" type="radio" name="tab_item" checked>
+      <label class="tabsmenu_item" for="tabsmenu1">宿泊先</label>
+      <input id="tabsmenu2" type="radio" name="tab_item">
+      <label class="tabsmenu_item" for="tabsmenu2">体験</label>
+      <input id="tabsmenu3" type="radio" name="tab_item">
+      <label class="tabsmenu_item" for="tabsmenu3"><a href="">オンライン体験</a></label>
+      <div class="tabsmenu_content" id="tabsmenu1_content">
+        <div class="seach-cat">
+          <input type="checkbox" class="tab_checkbox" id="tab_popup1">
+          <label class="tabsmenu-title" for="tab_popup1">
+          <p>ロケーション<br>
+            <span class="tabsmenu-detail">行き先はどちら</span></p>
+          </label>
+          <label class="tabsmenu-title-background" for="tab_popup1"></label>
+          <div class="tabsmenu-popup tabsmenu-seach-detail">
+            <p>柔軟な行き先と日付で検索</p>
+            <div class="tabsmenu-link"><a href="">柔軟な検索を試してみる<i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+        <div class="seach-cat">
+          <input type="checkbox" class="tab_checkbox" id="tab_popup2">
+          <label class="tabsmenu-title" for="tab_popup2">
+          <p>チェックイン<br>
+            <span class="tabsmenu-detail">日付を入力</span></p>
+          </label>
+          <label class="tabsmenu-title-background" for="tab_popup2"></label>
+          <div class="tabsmenu-popup tabsmenu-cheakin">
+            <div class="calendar-select">
+              <button>カレンダー</button>
+              <button>柔軟な日付設定</button>
+            </div>
+            <div class="datepicker"></div>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit">正確な日付</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="1"><i class="fa-solid fa-plus-minus"></i>1日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>2日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>3日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>7日</button>
+            </form>
+          </div>
+        </div>
+        <div class="seach-cat">
+          <input type="checkbox" class="tab_checkbox" id="tab_popup3">
+          <label class="tabsmenu-title" for="tab_popup3">
+          <p>チェックアウト<br>
+            <span class="tabsmenu-detail">日付を入力</span></p>
+          </label>
+          <label class="tabsmenu-title-background" for="tab_popup3"></label>
+          <div class="tabsmenu-popup tabsmenu-cheakin">
+            <div class="calendar-select">
+              <button>カレンダー</button>
+              <button>柔軟な日付設定</button>
+            </div>
+            <div class="datepicker"></div>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit">正確な日付</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="1"><i class="fa-solid fa-plus-minus"></i>1日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>2日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>3日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>7日</button>
+            </form>
+          </div>
+        </div>
+        <div class="seach-cat">
+          <input type="checkbox" class="tab_checkbox" id="tab_popup4">
+          <label class="tabsmenu-title" for="tab_popup4">
+          <p>人数<br>
+            <span class="tabsmenu-detail">ゲスト数を入力</span></p>
+          </label>
+          <label class="tabsmenu-title-background" for="tab_popup4"></label>
+          <div class="tabsmenu-popup tabsmenu-number">
+            <div class="number-select">
+              <p>大人<br>
+                <span>13歳以上</span></p>
+              <div class="number-choice">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <p>0</p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="number-select">
+              <p>子ども<br>
+                <span>年齢2-12</span></p>
+              <div class="number-choice">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <p>0</p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="number-select">
+              <p>乳幼児<br>
+                <span>2歳未満</span></p>
+              <div class="number-choice">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <p>0</p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="number-select">
+              <p>ペット<br>
+                <span><a href="">介助動物同伴の場合は？</a></span></p>
+              <div class="number-choice">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <p>0</p>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="number-alert">
+                <p>3匹以上のペットを同伴する場合は、必ずホストにその旨をご連絡ください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabsmenu-seach"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+      <div class="tabsmenu_content" id="tabsmenu2_content">
+        <div class="seach-cat seach-cat-next">
+          <input type="checkbox" class="tab_checkbox" id="tab_popup5">
+          <label class="tabsmenu-title" for="tab_popup5">
+          <p>ロケーション<br>
+            <span class="tabsmenu-detail">行き先はどちらですか？</span></p>
+          </label>
+          <label class="tabsmenu-title-background" for="tab_popup5"></label>
+          <div class="tabsmenu-popup tabsmenu-seach-detail">
+            <p>柔軟な行き先と日付で検索</p>
+            <div class="tabsmenu-link"><a href="">柔軟な検索を試してみる<i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+        <div class="seach-cat seach-cat-next">
+          <input type="checkbox" class="tab_checkbox" id="tab_popup6">
+          <label class="tabsmenu-title" for="tab_popup6">
+          <p>日付<br>
+            <span class="tabsmenu-detail">希望日を追加</span></p>
+          </label>
+          <label class="tabsmenu-title-background" for="tab_popup6"></label>
+          <div class="tabsmenu-popup tabsmenu-cheakin">
+            <div class="calendar-select">
+              <button>カレンダー</button>
+              <button>柔軟な日付設定</button>
+            </div>
+            <div class="datepicker"></div>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit">正確な日付</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="1"><i class="fa-solid fa-plus-minus"></i>1日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>2日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>3日</button>
+            </form>
+            <form class="select-days" action="/demo/send.html">
+              <button type="submit"　value="2"><i class="fa-solid fa-plus-minus"></i>7日</button>
+            </form>
+          </div>
+        </div>
+        <div class="tabsmenu-seach"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+      <div class="tabsmenu_content" id="tabsmenu3_content"> </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="pop">
+    <div class="pop-catch">
+      <h1>ウクライナ難民100,000人への<br class="tab">
+        滞在先提供にご協力ください</h1>
+      <div class="h1-link"><a href="">もっと詳しく</a></div>
+    </div>
+  </section>
+  <section class="intro">
+    <div class="intro-catch">
+      <h2>好奇心のおもむくまま、旅を予約しよう</h2>
+      <div class="h2-link"><a href=""><span>柔軟な検索</span></a></div>
+    </div>
+  </section>
+  <section class="local-first">
+    <h3>次に行く旅のアイディアを見つけよう</h3>
+    <div class="carousel">
+      <div class="local-area color1"><a href=""><img src="img/local-tokio.jpg" alt="東京">
+        <p class="placename"><span>東京</span><br>
+          目的地まで432km</p>
+        </a></div>
+      <div class="local-area color2"><a href=""><img src="img/local-tanabe.jpg" alt="田辺">
+        <p class="placename"><span>田辺</span><br>
+          目的地まで108km</p>
+        </a></div>
+      <div class="local-area color3"><a href=""><img src="img/local-odawara.jpg" alt="熱海市">
+        <p class="placename"><span>熱海市</span><br>
+          目的地まで358km</p>
+        </a></div>
+      <div class="local-area color4"><a href=""><img src="img/local-simoda.jpg" alt="勝浦">
+        <p class="placename"><span>勝浦</span><br>
+          目的地まで473km</p>
+        </a></div>
+    </div>
+  </section>
+  <section class="local-second">
+    <h3>Airbnb体験を検索しよう</h3>
+    <div class="second-h4">
+      <h4>旅行中に<br>
+        楽しめる体験</h4>
+      <div class="h4-link"><a href="">体験</a></div>
+    </div>
+    <div class="second-h4">
+      <h4>お家から<br>
+        楽しめる体験</h4>
+      <div class="h4-link"><a href="">オンライン体験</a></div>
+    </div>
+  </section>
+  <section class="local-third">
+    <h4>ホスティングについて<br>
+      知りたいことは<br class="tab">
+      ありますか？</h4>
+    <div class="h4-link"><a href="">スーパーホストに質問しよう</a></div>
+  </section>
+</main>
+<footer class="footer">
+  <section class="footer-info">
+    <h5 class="footer-list">サポート</h5>
+    <ul>
+      <li><a href="">ヘルプセンター</a></li>
+      <li><a href="">安全に関する情報</a></li>
+      <li><a href="">キャンセルオプション</a></li>
+      <li><a href="">Airbnbの新型コロナウイルスに対する取り組み</a></li>
+      <li><a href="">障害のある方へのサポート</a></li>
+      <li><a href="">近隣トラブルを報告する</a></li>
+    </ul>
+  </section>
+  <section class="footer-info">
+    <h5 class="footer-list">コミュニティ</h5>
+    <ul>
+      <li><a href="">Airbnb.org：災害発生時の滞在先</a></li>
+      <li><a href="">アフガン難民支援</a></li>
+      <li><a href="">差別に対する取り組み</a></li>
+    </ul>
+  </section>
+  <section class="footer-info">
+    <h5 class="footer-list">ホスティング</h5>
+    <ul>
+      <li><a href="">ホスティングをはじめる</a></li>
+      <li><a href="">AirCover：ホストに対する保護措置</a></li>
+      <li><a href="">ホスト向けリソースを確認</a></li>
+      <li><a href="">コミュニティフォーラムへ</a></li>
+      <li><a href="">責任をもってホスティングする方法</a></li>
+    </ul>
+  </section>
+  <section class="footer-info">
+    <h5 class="footer-list">企業情報</h5>
+    <ul>
+      <li><a href="">ニュースルーム</a></li>
+      <li><a href="">新機能のご紹介</a></li>
+      <li><a href="">Airbnb創業者からの手紙</a></li>
+      <li><a href="">採用情報</a></li>
+      <li><a href="">株主・投資家のみなさまへ</a></li>
+      <li><a href="">Airbnb Luxe</a></li>
+    </ul>
+  </section>
+  <div class="footer-address">
+    <div class="footer-labels">
+      <div class="f-icon modal-open"><span class="icon-globe"></span><span class="f-l-name">日本語(JP)</span></div>
+      <div class="f-icon modal-open"><span class="yen-sign">￥</span><span class="f-l-name">JPY</span></div>
+      <ul class="tab snslist">
+        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-copywriter">
+      <p>Airbnb Global Services Limited観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)<br>
+        <span class="footer-inc">© 2022 Airbnb, Inc.</span></p>
+    </div>
+    <ul class="footer-contactlist">
+      <li><a href="">プライバシー</a></li>
+      <li><a href="">・利用規約</a></li>
+      <li><a href="">・サイトマップ</a></li>
+      <li><a href="">・企業情報</a></li>
+    </ul>
+  </div>
+  <!--	<div class="modal-open">モーダルを開く</div>-->
+  <div class="modal-container">
+    <div class="modal-body">
+      <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+      <div class="modal-content">
+        <div class="f-c-top">
+          <div class="f-c-t-intro">
+            <p class="f-c-t-title">翻訳<img src="img/ei-translation.svg" alt=""></p>
+            <p class="f-c-t-desc">説明とレビューを自動的に日本語に翻訳します。</p>
+          </div>
+          <button class="f-c-t-check">
+          <div class="f-c-t-check-act"><i class="fa-solid fa-circle-check"></i></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--ここまで↓-->
+  <div class="footer-scroll list-scroll sp">
+    <ul>
+      <li><a href=""><i class="fa-solid fa-magnifying-glass" style="color: #FF385C;"></i><br>
+        探す</a></li>
+      <li><a href=""><i class="fa-regular fa-heart"></i><br>
+        お気に入り</a></li>
+      <li><a href=""><i class="fa-regular fa-circle-user"></i><br>
+        ログイン</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script>
+$(function(){
+  // 変数に要素を入れる
+  var open = $('.header-open'),
+    close = $('.header-modal-close'),
+    container = $('.header-container');
+  //開くボタンをクリックしたらモーダルを表示する
+  open.on('click',function(){ 
+    container.addClass('active');
+    return false;
+  });
+
+  //閉じるボタンをクリックしたらモーダルを閉じる
+  close.on('click',function(){  
+    container.removeClass('active');
+  });
+
+  //モーダルの外側をクリックしたらモーダルを閉じる
+  $(document).on('click',function(e) {
+    if(!$(e.target).closest('.header-modal-body').length) {
+      container.removeClass('active');
+    }
+  });
+});
+    </script> 
+<script>
+$(function(){
+  // 変数に要素を入れる
+  var open = $('.modal-open'),
+    close = $('.modal-close'),
+    container = $('.modal-container');
+  //開くボタンをクリックしたらモーダルを表示する
+  open.on('click',function(){ 
+    container.addClass('active');
+    return false;
+  });
+
+  //閉じるボタンをクリックしたらモーダルを閉じる
+  close.on('click',function(){  
+    container.removeClass('active');
+  });
+
+  //モーダルの外側をクリックしたらモーダルを閉じる
+  $(document).on('click',function(e) {
+    if(!$(e.target).closest('.modal-body').length) {
+      container.removeClass('active');
+    }
+  });
+});
+    </script> 
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>--> 
+<script src="slick/slick.min.js"></script> 
+<script>
+	$(function(){
+    function sliderSetting(){
+ 
+        var width = $(window).width();
+ 
+        if(width <=950){
+            $('.carousel').not('.slick-initialized').slick({
+        autoplay: false, //自動再生
+    dots: false, //ドットのナビゲーションを表示
+	  arrows: true,
+				responsive:[{
+      breakpoint: 950,
+      settings: {
+    infinite: false, //スライドのループ有効化
+        slidesToShow:3,
+        slideToScroll:1
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+    infinite: false, //スライドのループ有効化
+        slidesToShow: 2,
+        slideToScroll: 1
+      }
+    }]
+            });
+        } 
+		else {
+            $('.carousel.slick-initialized').slick('unslick');
+        }
+    }
+ 
+    sliderSetting();
+ 
+    $(window).resize( function() {
+        sliderSetting();
+    });
+});
+	</script> 
+<script>
+	window.addEventListener("scroll", function () {
+  // ヘッダーを変数の中に格納する
+  const header = document.querySelector(".header-bar");
+  // 100px以上スクロールしたらヘッダーに「scroll-nav」クラスをつける
+  header.classList.toggle("scroll-nav", window.scrollY > 100);
+});
+	</script> 
+<script src="../tanakatask/js/footer.js"></script> 
+<script src="calendar/jquery-ui-1.13.1.custom/jquery-ui.js"></script> 
+<script src="calendar/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script> 
+<script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script> 
+<script>
+$(function() {
+    $('.datepicker').datepicker({
+		showOtherMonths: true,
+		autoclose: true,
+		minDate: 0,
+		dateFormat:'yy-mm-dd',
+		dayNamesMin:['日','月','火','水','木','金','土'],
+		onSelect: function(dateText, inst) {
+			$('#from').val(dateText);
+		}
+    });
+});
+    </script> 
+<script>
+$(function () {
+    $('.scroll-house').on('click', () => {
+        $('.header-tabsmenu').toggle('slow');
+});
+});
+	</script>
+</body>
+</html>
