@@ -1488,9 +1488,28 @@ h1 {
     font-size: 0.8em;
     }.footer{    display: flex;
     flex-wrap: wrap;}
-    .footer .footer-info{border-bottom: none;}
+    .footer .footer-info{border-bottom: none;font-size:1em;
+    padding: 2vh 0;    width: calc(100%/4);}
     .footer .footer-info ul{display: contents;width: calc(100%/4);}
-    .footer .footer-info ul li{width: 100%;padding: 0.5vh 0;}
+    .footer .footer-info ul li{width: 100%;padding: 1vh 0;}
     .footer .footer-info ul li:nth-of-type(3n){width: 100%;}
-    .footer .footer-address{    border-top: 1px solid #DDDDDD;}
+  .footer .footer-info ul li a{font-size: 1em;}
+    .footer .footer-address{    border-top: 1px solid #DDDDDD;width: 100%;padding: 2.5vh 0;}
+  .footer .footer-address .footer-labels{justify-content: end;float: right;}
+  .footer .footer-address .footer-labels .f-icon{
+    font-size: 0.9em;}
+  .footer .footer-address .snslist li {
+    width: 2.2em;
+}
+  .footer .footer-address .footer-copywriter {
+    padding-top: 0;
+        text-align: left;
+}
+  .footer .footer-address .footer-copywriter p {
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+.footer .footer-address .footer-contactlist {
+    text-align: left;
+    font-size: 0.8em;
 }
