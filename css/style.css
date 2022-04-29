@@ -347,10 +347,10 @@ h1 {
   margin-bottom: 2vh;
 }
 .local-second .second-h4:first-of-type {
-  background: url("file://ts-tglcdd/Koukoku/tanaka%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80/%E4%BB%8A%E6%9C%88/%E7%B7%B4%E7%BF%92/tanakatask/img/local-secondbg1.jpg")no-repeat center top/cover;
+  background: url("img/local-secondbg1.jpg")no-repeat center top/cover;
 }
 .local-second .second-h4:last-of-type {
-  background: url("file://ts-tglcdd/Koukoku/tanaka%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80/%E4%BB%8A%E6%9C%88/%E7%B7%B4%E7%BF%92/tanakatask/img/local-secondbg2.jpg")no-repeat center top/cover;
+  background: url("img/local-secondbg2.jpg")no-repeat center top/cover;
 }
 .local-second .second-h4 h4 {
   font-size: 3em;
@@ -365,7 +365,7 @@ h1 {
 */
 /*local-third*/
 .local-third {
-  background: url("file://ts-tglcdd/Koukoku/tanaka%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80/%E4%BB%8A%E6%9C%88/%E7%B7%B4%E7%BF%92/tanakatask/img/local-thirdbg.jpg") no-repeat center /cover;
+  background: url("img/local-thirdbg.jpg") no-repeat center /cover;
   padding: 5vh 6vw 4vh;
   display: grid;
   grid-template-rows: 28em 4em;
@@ -778,7 +778,7 @@ h1 {
     z-index: 999;
   }
   .header-bar.scroll-nav .header-open-tab .logo {
-    background: url("file://ts-tglcdd/Koukoku/tanaka%E4%BD%9C%E6%A5%AD%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80/%E4%BB%8A%E6%9C%88/%E7%B7%B4%E7%BF%92/tanakatask/img/icons8-red.svg")no-repeat center/100%;
+    background: url("img/icons8-red.svg")no-repeat center/100%;
     width: 2.5em;
   }
   .header-bar.scroll-nav .header-open-tab .logo img {
