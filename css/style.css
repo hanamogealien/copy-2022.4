@@ -1488,7 +1488,7 @@ h1 {
     font-size: 0.8em;
     }.footer{    display: flex;
     flex-wrap: wrap;}
-    .footer .footer-info{border-bottom: none;font-size:1em;
+    .footer .footer-info{font-size:1em;
     padding: 2vh 0;    width: calc(100%/4);}
     .footer .footer-info ul{display: contents;width: calc(100%/4);}
     .footer .footer-info ul li{width: 100%;padding: 1vh 0;}
