@@ -254,7 +254,7 @@ h1 {
   display: grid;
   grid-template-rows: 30em 10em;
   border-radius: 1em;
-  background: url("img/introh2bg.jpg")no-repeat center top/cover;
+  background: url("../img/introh2bg.jpg")no-repeat center top/cover;
 }
 .intro .intro-catch h2 {
   align-items: flex-end;
@@ -347,10 +347,10 @@ h1 {
   margin-bottom: 2vh;
 }
 .local-second .second-h4:first-of-type {
-  background: url("img/local-secondbg1.jpg")no-repeat center top/cover;
+  background: url("../img/local-secondbg1.jpg")no-repeat center top/cover;
 }
 .local-second .second-h4:last-of-type {
-  background: url("img/local-secondbg2.jpg")no-repeat center top/cover;
+  background: url("../img/local-secondbg2.jpg")no-repeat center top/cover;
 }
 .local-second .second-h4 h4 {
   font-size: 3em;
@@ -365,7 +365,7 @@ h1 {
 */
 /*local-third*/
 .local-third {
-  background: url("img/local-thirdbg.jpg") no-repeat center /cover;
+  background: url("../img/local-thirdbg.jpg") no-repeat center /cover;
   padding: 5vh 6vw 4vh;
   display: grid;
   grid-template-rows: 28em 4em;
