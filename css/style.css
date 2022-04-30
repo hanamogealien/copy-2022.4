@@ -1005,7 +1005,7 @@ h1 {
     width: 40%;
     margin: 0 auto 3vh;
     background: #ebebeb;
-    border-radius: 1.5rem;
+    border-radius: 2em;
     padding: 5px 0;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select button {
@@ -1420,6 +1420,7 @@ h1 {
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin {
     width: 60%;
   }
+  .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select{width:30%;margin: 0 auto 1.5vh;}
   #tab_popup2:checked ~ .tabsmenu-cheakin {
     transform: translateY(49%) translateX(183%);
   }
