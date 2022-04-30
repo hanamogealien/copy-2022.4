@@ -1005,7 +1005,7 @@ h1 {
     width: 40%;
     margin: 0 auto 3vh;
     background: #ebebeb;
-    border-radius: 2em;
+    border-radius:2em;
     padding: 5px 0;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select button {
