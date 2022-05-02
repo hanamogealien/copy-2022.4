@@ -1305,7 +1305,7 @@ h1 {
   }
 }
 /*PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
   .sp {
     display: none;
   }
