@@ -1394,6 +1394,7 @@ h1 {
     box-sizing: border-box;
         padding: 0.5vh 0;
   }
+  .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat:hover{margin-top: -0.5vh;padding: 1vh 2vw;}
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .tabsmenu-seach {
     width: 2.5em;
     height: 2.5em;
