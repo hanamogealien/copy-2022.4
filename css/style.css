@@ -947,7 +947,7 @@ h1 {
     z-index: -1;
   }
   #tab_popup1:checked ~ .tabsmenu-seach-detail {
-    transform: translateY(15%) translateX(118%);
+    transform: translateY(2em) translateX(118%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-seach-detail {
     width: 55%;
@@ -983,12 +983,11 @@ h1 {
     -webkit-text-fill-color: transparent;
   }
   #tab_popup2:checked ~ .tabsmenu-cheakin {
-    transform: translateY(52%) translateX(105%);
+    transform: translateY(2em) translateX(105%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin {
     width: 90%;
     left: -90%;
-    top: 0;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select {
     width: 40%;
@@ -1038,15 +1037,14 @@ h1 {
     border: 2px solid #000;
   }
   #tab_popup3:checked ~ .tabsmenu-cheakin {
-    transform: translateY(52%) translateX(105%);
+    transform: translateY(2em) translateX(105%);
   }
   #tab_popup4:checked ~ .tabsmenu-number {
-    transform: translateY(48%) translateX(-105%);
+    transform: translateY(2em) translateX(-105%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number {
     width: 90%;
     right: -90%;
-    top: 0;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number .number-select {
     display: flex;
@@ -1109,10 +1107,10 @@ h1 {
     color: #a9a9a9;
   }
   #tab_popup5:checked ~ .tabsmenu-seach-detail {
-    transform: translateY(15%) translateX(118%);
+    transform: translateY(2em) translateX(118%);
   }
   #tab_popup6:checked ~ .tabsmenu-cheakin {
-    transform: translateY(52%) translateX(105%);
+    transform: translateY(2em) translateX(105%);
   }
   #tab_popup1:checked ~ .tabsmenu-title, #tab_popup2:checked ~ .tabsmenu-title, #tab_popup3:checked ~ .tabsmenu-title, #tab_popup4:checked ~ .tabsmenu-title, #tab_popup5:checked ~ .tabsmenu-title, #tab_popup6:checked ~ .tabsmenu-title {
     transform: translate(0);
@@ -1406,7 +1404,7 @@ h1 {
     left: -30%;
   }
   #tab_popup1:checked ~ .tabsmenu-seach-detail {
-    transform: translateY(10%) translateX(178%);
+    transform: translateY(1em) translateX(178%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-seach-detail .tabsmenu-link a {
     font-size: 1em;
@@ -1420,10 +1418,10 @@ h1 {
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select{width:30%;margin: 0 auto 1.5vh;}
   #tab_popup2:checked ~ .tabsmenu-cheakin {
-    transform: translateY(49%) translateX(183%);
+    transform: translateY(1em) translateX(183%);
   }
   #tab_popup3:checked ~ .tabsmenu-cheakin {
-    transform: translateY(49%) translateX(183%);
+    transform: translateY(1em) translateX(183%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select {
     display: none;
@@ -1432,7 +1430,7 @@ h1 {
     display: none;
   }
   #tab_popup4:checked ~ .tabsmenu-number {
-    transform: translateY(33%) translateX(-162%);
+    transform: translateY(1em) translateX(-162%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number {
     width: 30%;
@@ -1448,10 +1446,10 @@ h1 {
     font-size: 1em;
   }
   #tab_popup5:checked ~ .tabsmenu-seach-detail {
-    transform: translateY(10%) translateX(178%);
+    transform: translateY(1em) translateX(178%);
   }
   #tab_popup6:checked ~ .tabsmenu-cheakin {
-    transform: translateY(49%) translateX(183%);
+    transform: translateY(1em) translateX(183%);
   }
   .pop {
     padding-top: 17vh;
