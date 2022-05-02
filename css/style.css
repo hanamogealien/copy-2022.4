@@ -1411,7 +1411,7 @@ h1 {
     left: -30%;
   }
   #tab_popup1:checked ~ .tabsmenu-seach-detail {
-    transform: translateY(1em) translateX(178%);
+    transform: translateY(1.5em) translateX(195%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-seach-detail .tabsmenu-link a {
     font-size: 1em;
@@ -1421,14 +1421,14 @@ h1 {
     padding: 3vh 3vw;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin {
-    width: 60%;
+    width: 50%;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select{width:30%;margin: 0 auto 1.5vh;}
   #tab_popup2:checked ~ .tabsmenu-cheakin {
-    transform: translateY(1em) translateX(183%);
+    transform: translateY(1.5em) translateX(230%);
   }
   #tab_popup3:checked ~ .tabsmenu-cheakin {
-    transform: translateY(1em) translateX(183%);
+    transform: translateY(1.5em) translateX(230%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-cheakin .calendar-select {
     display: none;
@@ -1437,7 +1437,7 @@ h1 {
     display: none;
   }
   #tab_popup4:checked ~ .tabsmenu-number {
-    transform: translateY(1em) translateX(-162%);
+    transform: translateY(1.5em) translateX(-182%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number {
     width: 30%;
@@ -1453,10 +1453,10 @@ h1 {
     font-size: 1em;
   }
   #tab_popup5:checked ~ .tabsmenu-seach-detail {
-    transform: translateY(1em) translateX(178%);
+    transform: translateY(1.5em) translateX(195%);
   }
   #tab_popup6:checked ~ .tabsmenu-cheakin {
-    transform: translateY(1em) translateX(183%);
+    transform: translateY(1.5em) translateX(230%);
   }
   .pop {
     padding-top: 17vh;
