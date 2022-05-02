@@ -1391,11 +1391,13 @@ h1 {
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content {
     height: 3.5em;
+    box-sizing: border-box;
+        padding: 0.5vh 0;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .tabsmenu-seach {
     width: 2.5em;
     height: 2.5em;
-    top: 0.3vh;
+    top: 0.7vh;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .tabsmenu-seach i {
     line-height: 2.5em;
