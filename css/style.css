@@ -787,21 +787,24 @@ h1 {
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house {
     font-size: 1em;
     font-weight: 600;
-    padding: 1vh 0;
+    padding:0;
     width: 100%;
     text-align: left;
+    height: 2.8em;
+    padding: 0;
+    line-height: 2.8em;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house i {
     position: absolute;
-    width: 3.2em;
-    height: 3.2em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 2em;
     background: #ff385c;
-    line-height: 3.2em;
+    line-height: 2.5em;
     text-align: center;
     color: #fff;
     font-size: 1em;
-    top: 0.2vh;
+    top: 0.3vh;
     right: 0.5vw;
   }
   .header-bar.scroll-nav .header-open-tab .header-list ul li a {
@@ -1352,8 +1355,8 @@ h1 {
     margin-left: auto;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house{
-      height: 2.8em;
-    line-height: 2.8em;
+      height: 2.5em;
+    line-height: 2.5em;
     padding: 0;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house i {
