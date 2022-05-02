@@ -1364,6 +1364,11 @@ h1 {
     margin-top: 1vh;
     margin-left: auto;
   }
+  .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house{
+      height: 2.8em;
+    line-height: 2.8em;
+    padding: 0;
+  }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house i {
     width: 2em;
     height: 2em;
@@ -1399,6 +1404,7 @@ h1 {
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .tabsmenu-seach {
     width: 2.5em;
     height: 2.5em;
+    top: 0.3vh;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .tabsmenu-seach i {
     line-height: 2.5em;
