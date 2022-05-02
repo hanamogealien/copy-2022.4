@@ -113,7 +113,6 @@ h1 {
   transition: 0.5s;
   box-sizing: border-box;
 }
-/*モーダルを開く*/
 .header-bar .header-open {
   width: 100%;
 }
@@ -132,7 +131,6 @@ h1 {
   font-size: 1.1em;
   margin-right: 2vw;
 }
-/* スクロールして「scroll-navクラス」がついたときのヘッダーデザイン */
 .header-bar.scroll-nav {
   background: #fff;
 }
@@ -446,7 +444,6 @@ h1 {
 .snslist {
   display: none
 }
-/*モーダルを開く*/
 .footer .footer-address .footer-labels .modal-open {
   left: 17%;
 }
@@ -454,7 +451,6 @@ h1 {
 .footer .footer-address .footer-labels .modal-open:nth-of-type(2) {
   left: 45%;
 }
-/*モーダルを開くボタン*/
 .modal-open {
   position: absolute;
   display: flex;
@@ -463,7 +459,6 @@ h1 {
   margin: auto;
   transform: translate(-50%, -50%);
 }
-/*モーダル本体の指定 + モーダル外側の背景の指定*/
 .modal-container {
   position: fixed;
   top: 0;
@@ -478,26 +473,22 @@ h1 {
   transition: .3s;
   box-sizing: border-box;
 }
-/*モーダル本体の擬似要素の指定*/
 .modal-container:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 80vh;
 }
-/*モーダル本体に「active」クラス付与した時のスタイル*/
 .modal-container.active {
   opacity: 1;
   visibility: visible;
 }
-/*モーダル枠の指定*/
 .modal-body {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 }
-/*モーダルを閉じるボタンの指定*/
 .modal-close {
   position: absolute;
   display: flex;
@@ -516,7 +507,6 @@ h1 {
 .modal-close .fa-xmark {
   margin: 0 0 5% 8%;
 }
-/*モーダル内のコンテンツの指定*/
 .modal-content {
   background: #fff;
   text-align: left;
@@ -612,7 +602,6 @@ h1 {
 .footer-scroll ul li:active a i {
   color: #FF385C;
 }
-/*スクロールしたら消す*/
 .list-scroll.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -851,11 +840,11 @@ h1 {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -5px; /*下線の上下位置調整*/ display: inline-block;
-    width: 20px; /*下線の幅*/ height: 2px; /*下線の太さ*/ -moz-transform: translateX(-50%);
+    bottom: -5px; display: inline-block;
+    width: 20px;  height: 2px;-moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translate(-50%); /*位置調整*/ background: #fff; /*下線の色*/
+    transform: translate(-50%); background: #fff;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content {
     display: none;
