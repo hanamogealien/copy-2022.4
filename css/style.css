@@ -1040,18 +1040,18 @@ h1 {
     transform: translateY(2em) translateX(105%);
   }
   #tab_popup4:checked ~ .tabsmenu-number {
-    transform: translateY(2em) translateX(-105%);
+    transform: translateY(2em) translateX(-110%);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number {
-    width: 90%;
-    right: -90%;
+    width: 50%;
+    right: -50%;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number .number-select {
     display: flex;
     border-bottom: 1px solid #ebebeb;
     padding: 2vh 0;
     flex-wrap: wrap;
-    width: 55%;
+    width: 100%;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number .number-select:last-of-type {
     border-bottom: none;
@@ -1059,13 +1059,13 @@ h1 {
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number .number-select p {
     text-align: left;
-    font-size: 1.2em;
-    line-height: 1;
+    font-size: 1.5em;
+    line-height: 1.5;
     width: -webkit-calc(100% - 10rem);
     width: calc(100% - 10rem);
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number .number-select p span {
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #a9a9a9;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .seach-cat .tabsmenu-number .number-select p span a {
