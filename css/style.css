@@ -767,7 +767,7 @@ h1 {
     z-index: 999;
   }
   .header-bar.scroll-nav .header-open-tab .logo {
-    background: url("img/icons8-red.svg")no-repeat center/100%;
+    background: url("../img/icons8-red.svg")no-repeat center/100%;
     width: 2.5em;
   }
   .header-bar.scroll-nav .header-open-tab .logo img {
