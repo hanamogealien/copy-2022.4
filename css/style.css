@@ -785,7 +785,7 @@ h1 {
     padding-left: 3vw;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
     padding:0;
     width: 100%;
@@ -1358,6 +1358,7 @@ h1 {
       height: 2.5em;
     line-height: 2.5em;
     padding: 0;
+    font-size: 1em;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house i {
     width: 2em;
