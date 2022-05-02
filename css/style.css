@@ -1329,6 +1329,9 @@ h1 {
   html {
     font-size: 12px;
   }
+  section {
+    padding: 2vh 10%;
+}
     h2{font-size: 2.5em;}
     
     .h4-link a{font-size: 1em;border-radius: 0.3em;}
@@ -1462,15 +1465,19 @@ h1 {
     .pop .pop-catch h1{font-size: 2.2em;}
     .pop .pop-catch{grid-template-rows: 8em 7em;}
     .pop .pop-catch .h1-link a{font-size: 1em;padding: 0 1vw;}
-    .intro{padding-bottom: 5vh;}
+    .intro{
+    padding: 5vh 10%;}
     .intro .intro-catch{grid-template-rows: 32em 8em;}
     .intro .intro-catch .h2-link a{font-size: 1em;}
     .local-first .carousel{display: flex;}
-    .local-first{padding: 2vh 5% 5vh;}
+    .local-first{padding: 2vh 10% 5vh;}
     .local-first .carousel .local-area{width: calc(100%/4);}
     .local-first .carousel .local-area a{grid-template-rows: 12em 12em;}
     .local-first .carousel .local-area a .placename{font-size: 1.1em;}
-    .local-second .second-h4:first-of-type {
+ .local-second {
+    padding: 2vh 10%;
+}
+  .local-second .second-h4:first-of-type {
     margin-right: 2%;
 }
     .local-second .second-h4{    width: 49%;
@@ -1478,7 +1485,7 @@ h1 {
     .local-second .second-h4 h4{font-size: 2.5em;}
     .local-second .second-h4 .h4-link a{    padding: 0.5vh 1.5vw;}
     .local-third{    box-sizing: border-box;
-    margin: 3vh 5% 4vh;
+    margin: 3vh 10% 4vh;
     border-radius: 1em;
     grid-template-rows: 10em 20em;
 
