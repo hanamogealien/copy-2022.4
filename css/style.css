@@ -1319,7 +1319,7 @@ h1 {
   html {
     font-size: 12px;
   }
-  boby{font-size: 1em;}
+  boby{font-size:1em;}
   section {
     padding: 2vh 10%;
 }
@@ -1382,15 +1382,15 @@ h1 {
     margin: 0 7vw 0 auto;
   }
   .header-tabsmenu {
-    width: 60%;
+    width: 50%;
     padding-top: 0;
     position: absolute;
     top: 2vh;
-    left: 20%;
-    right: 20%;
+    left: 25%;
+    right: 25%;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content {
-    height: 3em;
+    height: 3.5em;
   }
   .header-tabsmenu .tabsmenu-list .tabsmenu_content .tabsmenu-seach {
     width: 2.5em;
