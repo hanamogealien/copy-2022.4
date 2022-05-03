@@ -1355,7 +1355,6 @@ h1 {
     margin-top: 1vh;
     margin-left: auto;
   }
-  .header-bar.scroll-nav .header-open-tab .scroll-search:active{opacity: 0;}
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house{
     padding: 0;
     font-size:0.9em;
@@ -1364,6 +1363,7 @@ h1 {
     top: 0.2vh;
   }
     .header-bar.scroll-nav .header-open-tab .header-list{    margin: 0 7vw 0 18%;}
+  .scroll-nav .header-tabsmenu{background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);}
   #drawer_input:checked ~ .headernav_content {
     transform: translateY(30%) translateX(-135%);
   }
