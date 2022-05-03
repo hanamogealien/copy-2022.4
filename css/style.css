@@ -1473,6 +1473,7 @@ h1 {
     .local-first .carousel{display: flex;}
     .local-first{padding: 2vh 10% 5vh;}
     .local-first .carousel .local-area{width: calc(100%/4);}
+  .local-first .carousel .local-area a{grid-template-rows: 12em 12em;}
   .local-first .carousel .local-area a .placename{padding: 1vh 1vw 0;}
  .local-second {
     padding: 2vh 10%;
@@ -1481,7 +1482,7 @@ h1 {
     margin-right: 2%;
 }
     .local-second .second-h4{    width: 49%;
-    padding: 6%;    grid-template-rows: 7em 40em;}
+    padding: 6%;    grid-template-rows: 7em 30em;}
     .local-second .second-h4 h4{font-size: 2.5em;}
     .local-second .second-h4 .h4-link a{    padding: 0.5vh 1.5vw;}
     .local-third{    box-sizing: border-box;
