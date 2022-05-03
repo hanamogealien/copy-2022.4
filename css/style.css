@@ -1368,7 +1368,7 @@ h1 {
     top: 0.8vh;
   }
     .header-bar.scroll-nav .header-open-tab .header-list{    margin: 0 7vw 0 18%;}
-  .scroll-nav .header-tabsmenu{background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);}
+  .scroll-nav .header-tabsmenu{transition: 0.5s;background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);}
   #drawer_input:checked ~ .headernav_content {
     transform: translateY(30%) translateX(-135%);
   }
