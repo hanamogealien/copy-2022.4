@@ -777,30 +777,30 @@ h1 {
     display: block;
     width: 35vw;
     box-shadow: 0 2px 5px #717171;
-    margin-left: 3vw;
-    height: auto;
     border-radius: 2em;
     position: relative;
     box-sizing: border-box;
     padding-left: 3vw;
+    height: 3vh;
+    margin: auto 0 auto 3vw;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 600;
     padding:0;
     width: 100%;
     text-align: left;
-    height: 2.8em;
+    height: 3vh;
     padding: 0;
-    line-height: 2.8em;
+    line-height: 3vh;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house i {
     position: absolute;
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 2em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
     background: #ff385c;
-    line-height: 2.5em;
+    line-height: 2em;
     text-align: center;
     color: #fff;
     font-size: 1em;
