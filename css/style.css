@@ -280,6 +280,7 @@ h1 {
 .local-first {
   position: relative;
   padding: 2vh 0;
+  top: -2px;
 }
 .local-first h3 {
   padding-left: 6%;
