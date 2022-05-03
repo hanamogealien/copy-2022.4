@@ -1352,8 +1352,7 @@ h1 {
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search {
     width: 20vw;
-    margin-top: 1vh;
-    margin-left: auto;
+    margin: auto 0 auto auto;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house{
     padding: 0;
