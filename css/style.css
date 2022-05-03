@@ -777,7 +777,7 @@ h1 {
   .header-bar.scroll-nav .header-open-tab .scroll-search {
     display: block;
     width: 35vw;
-    box-shadow: 0 2px 5px #717171;
+    box-shadow: 0 1px 2px #717171;
     border-radius: 2em;
     position: relative;
     box-sizing: border-box;
@@ -1353,15 +1353,19 @@ h1 {
     height: auto;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search {
-    width: 20vw;
+    width: 18vw;
     margin: auto 0 auto auto;
+    height: 4.5vh;
+    padding-left: 1.5vw;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house{
     padding: 0;
     font-size:0.8em;
+        height: 4.5vh;
+    line-height: 4.5vh;
   }
   .header-bar.scroll-nav .header-open-tab .scroll-search .scroll-house i {
-    top: 0.2vh;
+    top: 0.8vh;
   }
     .header-bar.scroll-nav .header-open-tab .header-list{    margin: 0 7vw 0 18%;}
   .scroll-nav .header-tabsmenu{background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);}
