@@ -1305,6 +1305,8 @@ h1 {
   .footer .footer-address .footer-contactlist li {
     font-size: 1em;
   }
+  .modal-close .fa-xmark{margin: auto auto auto 5%;}
+  .modal-content{padding: 5% 5% 25%;}
 }
 /*PC*/
 @media screen and (min-width: 900px) {
@@ -1514,4 +1516,8 @@ h1 {
 .footer .footer-address .footer-contactlist {
     text-align: left;
     font-size: 0.8em;
+  }
+.modal-close .fa-xmark{
+    font-size: 0.5em;
+}
 }
